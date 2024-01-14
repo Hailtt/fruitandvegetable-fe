@@ -1,0 +1,50 @@
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+
+  > .language {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      color: $color-primary;
+      cursor: pointer;
+    }
+    &:hover > .list {
+      display: block;
+    }
+  }
+
+  > .language > .label {
+    font-size: 12px;
+  }
+  > .language > .icon {
+    font-size: 10px;
+  }
+  > .language > .list {
+    display: none;
+    font-size: inherit;
+    position: absolute;
+    width: 100px;
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 8px;
+    box-shadow: $shadow-primary;
+  }
+
+  > .language > .list > .item {
+    padding: 8px 12px;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}

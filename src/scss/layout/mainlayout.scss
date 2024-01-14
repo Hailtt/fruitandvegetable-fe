@@ -1,0 +1,10 @@
+.th-mainlayout {
+  width: 100%;
+  padding-inline: 30px;
+  position: relative;
+
+  @include breakpoint-down(tablet) {
+    padding-inline: 15px;
+    background-color: red;
+  }
+}
