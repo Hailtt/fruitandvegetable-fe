@@ -1,4 +1,5 @@
 export { default as Products } from "./product/Products";
-export { default as Topmenu } from "./header/topmenu/Topmenu";
-export { default as Midmenu } from "./header/midmenu/Midmenu";
-export { default as Bottommenu } from "./header/bottommenu/Bottommenu";
+export { default as Header } from "./header/Header";
+export { default as Footer } from "./footer/footer";
+export { default as Home_Slide } from "./home_slide/home_slide";
+export { default as Banner } from "./banner/banner";

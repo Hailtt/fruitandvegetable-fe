@@ -1,7 +1,13 @@
 import React from "react";
+import { Banner, Home_Slide } from "../../components";
 
-const Homepage = () => {
-  return <div className="homepage"></div>;
-};
+function Homepage() {
+  return (
+    <div className="th-homepage">
+      <Home_Slide />
+      <Banner />
+    </div>
+  );
+}
 
 export default Homepage;

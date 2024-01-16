@@ -1,5 +1,7 @@
 import React from "react";
-import { Bottommenu, Midmenu, Topmenu } from "../../components";
+import Topmenu from "./topmenu/Topmenu";
+import Midmenu from "./midmenu/Midmenu";
+import Bottommenu from "./bottommenu/Bottommenu";
 
 function Header() {
   return (

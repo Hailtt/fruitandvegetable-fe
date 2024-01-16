@@ -1,7 +1,7 @@
 import React from "react";
 
-const Emptylayout = ({ children }) => {
+function Emptylayout({ children }) {
   return <div>{children}</div>;
-};
+}
 
 export default Emptylayout;

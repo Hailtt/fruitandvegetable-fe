@@ -1,7 +1,7 @@
 import React from "react";
-import { Footer, Header } from "../page";
+import { Footer, Header } from "../components";
 
-const Mainlayout = ({ children }) => {
+function Mainlayout({ children }) {
   return (
     <div className="th-mainlayout">
       <Header />
@@ -9,6 +9,6 @@ const Mainlayout = ({ children }) => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Mainlayout;

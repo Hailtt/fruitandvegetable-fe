@@ -1,5 +1,5 @@
 import Mainlayout from "../layout/Mainlayout";
-import { Homepage } from "../page/";
+import { Homepage } from "../page";
 
 export const PrivateRoutes = [
   { path: "/", component: Homepage, layout: Mainlayout },
