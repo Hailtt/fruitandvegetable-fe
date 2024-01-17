@@ -1,0 +1,125 @@
+.th-newproductslide {
+  .swiper {
+    overflow: hidden;
+  }
+  > .swiper > .swiper-wrapper {
+    display: flex;
+  }
+
+  > .swiper > .swiper-wrapper > .swiper-slide > .card > .thumbnail {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 370px;
+  }
+  > .swiper > .swiper-wrapper > .swiper-slide > .card > .thumbnail > .link {
+    display: block;
+    width: 100%;
+  }
+  > .swiper
+    > .swiper-wrapper
+    > .swiper-slide
+    > .card
+    > .thumbnail
+    > .link
+    > .image {
+    transition: all 0.3s ease;
+    object-fit: cover;
+    height: 100%;
+  }
+  > .swiper > .swiper-wrapper > .swiper-slide > .card > .content {
+    margin-bottom: 17px;
+  }
+  > .swiper > .swiper-wrapper > .swiper-slide > .card > .content > .meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  > .swiper
+    > .swiper-wrapper
+    > .swiper-slide
+    > .card
+    > .content
+    > .meta
+    > .tag {
+    color: #86948d;
+  }
+
+  > .swiper > .swiper-wrapper > .swiper-slide > .card > .content > .name {
+    color: $color-success;
+    line-height: 1.1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+  > .swiper > .swiper-wrapper > .swiper-slide > .card > .content > .more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: $color-success;
+    cursor: pointer;
+
+    &:hover > .link::after {
+      color: $color-primary;
+      width: 0;
+    }
+    &:hover > .icon {
+      color: $color-primary;
+    }
+  }
+  > .swiper
+    > .swiper-wrapper
+    > .swiper-slide
+    > .card
+    > .content
+    > .more
+    > .link {
+    color: $color-success;
+    display: inline-flex;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      height: 1px;
+      width: 100%;
+      background-color: $color-success;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  > .swiper
+    > .swiper-wrapper
+    > .swiper-slide
+    > .card
+    > .content
+    > .more
+    > .icon {
+    color: inherit;
+    font-size: 12px;
+  }
+}

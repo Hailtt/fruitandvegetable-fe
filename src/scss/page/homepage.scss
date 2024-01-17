@@ -1,3 +1,64 @@
-.homepage {
-  min-height: 100vh;
+.th-homepage {
+  > .newproductslide {
+    position: relative;
+    margin-top: 50px;
+
+    @include breakpoint-down(phone) {
+      margin-bottom: 100px;
+    }
+
+    > .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include breakpoint-down(phone) {
+        justify-content: center;
+      }
+    }
+    > .header > .title {
+      color: $color-success;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    > .header > .viewmore {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 6px;
+      gap: 6px;
+
+      &:hover > .link::after {
+        width: 0;
+      }
+
+      @include breakpoint-down(phone) {
+        display: none;
+      }
+    }
+    > .header > .viewmore > .link {
+      font-size: 14px;
+      font-weight: 700;
+      color: $color-primary;
+      text-decoration: none;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        height: 1px;
+        width: 100%;
+        background-color: $color-primary;
+        transition: all 0.3s ease;
+      }
+    }
+    > .header > .viewmore > .icon {
+      color: $color-primary;
+      font-size: 14px;
+    }
+  }
 }

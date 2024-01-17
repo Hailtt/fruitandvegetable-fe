@@ -1,5 +1,62 @@
 .th-footer {
-	margin-top: 50px;
-	height: 50px;
-	background-color: rgb(60, 164, 255);
+  background-color: rgba($color-success, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 30px;
+  @include breakpoint-down(phone) {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  > .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: 14px;
+    gap: 20px;
+    @include breakpoint-down(phone) {
+      width: 100%;
+    }
+  }
+  > .right > .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  > .right > .item > .icon {
+    font-size: 24px;
+    color: #86938d;
+    background-color: #f6f6f6;
+    &:hover {
+      color: white;
+      cursor: pointer;
+      background-color: $color-primary;
+    }
+  }
+
+  > .right > .scroll {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+    &:hover > .btn {
+      border-color: $color-primary;
+      background-color: $color-primary;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  > .right > .scroll > .btn {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
 }
